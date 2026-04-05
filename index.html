@@ -259,6 +259,7 @@
     .phone-wrap {
       position: relative;
       animation: float 4s ease-in-out infinite;
+      isolation: isolate;
     }
 
     @keyframes float {
@@ -276,6 +277,7 @@
         0 0 0 1px rgba(255,255,255,0.05) inset;
       overflow: hidden;
       position: relative;
+      z-index: 1;
     }
 
     .phone-notch {
@@ -426,6 +428,7 @@
       align-items: center;
       gap: 10px;
       white-space: nowrap;
+      z-index: 10;
     }
 
     .float-card-left {
